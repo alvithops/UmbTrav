@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "inverse-primary": "#006591",
+        "primary": "#89ceff",
+        "surface-card-hover": "rgba(30, 41, 59, 0.8)",
+        "background": "#0f131d",
+        "surface-variant": "#313540",
+        "secondary": "#4edea3",
+        "text-primary": "#f8fafc",
+        "surface-container-high": "#262a35",
+        "surface-container-low": "#171b26",
+        "tertiary-fixed": "#ffddb8",
+        "tertiary-fixed-dim": "#ffb95f",
+        "surface-bright": "#353944",
+        "text-secondary": "#94a3b8",
+        "tertiary-container": "#d88a00",
+        "on-surface-variant": "#bec8d2",
+        "whatsapp-green": "#25d366",
+        "tertiary": "#ffb95f",
+        "glow-cyan": "rgba(14, 165, 233, 0.15)",
+        "surface-container": "#1c1f2a",
+        "on-error": "#690005",
+        "primary-fixed-dim": "#89ceff",
+        "on-secondary-fixed-variant": "#005236",
+        "surface-glass-border": "rgba(255, 255, 255, 0.08)",
+        "glow-emerald": "rgba(16, 185, 129, 0.12)",
+        "on-tertiary-fixed-variant": "#653e00",
+        "outline-variant": "#3e4850",
+        "on-secondary": "#003824",
+        "on-primary-container": "#003751",
+        "surface-dim": "#0f131d",
+        "surface-glass-highlight": "rgba(56, 189, 248, 0.25)",
+        "on-primary": "#00344d",
+        "on-secondary-container": "#00311f",
+        "text-muted": "#64748b",
+        "secondary-container": "#00a572",
+        "inverse-surface": "#dfe2f1",
+        "surface-tint": "#89ceff",
+        "on-tertiary-fixed": "#2a1700",
+        "on-tertiary-container": "#4a2c00",
+        "inverse-on-surface": "#2c303b",
+        "error": "#ffb4ab",
+        "primary-fixed": "#c9e6ff",
+        "secondary-fixed": "#6ffbbe",
+        "primary-container": "#0ea5e9",
+        "on-secondary-fixed": "#002113",
+        "surface": "#0f131d",
+        "surface-card": "rgba(15, 23, 42, 0.65)",
+        "surface-container-lowest": "#0a0e18",
+        "error-container": "#93000a",
+        "secondary-fixed-dim": "#4edea3",
+        "surface-container-highest": "#313540",
+        "outline": "#88929b",
+        "on-surface": "#dfe2f1",
+        "on-error-container": "#ffdad6",
+        "on-tertiary": "#472a00",
+        "on-background": "#dfe2f1",
+        "on-primary-fixed-variant": "#004c6e",
+        "on-primary-fixed": "#001e2f"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-sm": "0.75rem",
+        "space-xl": "3.5rem",
+        "space-md": "1.25rem",
+        "gutter-mobile": "1rem",
+        "space-xs": "0.375rem",
+        "margin": "2rem",
+        "margin-mobile": "1.25rem",
+        "space-lg": "2rem",
+        "gutter": "1.5rem"
+      },
+      "fontFamily": {
+        "headline-xl-mobile": ["Plus Jakarta Sans"],
+        "headline-lg": ["Plus Jakarta Sans"],
+        "label-numeric": ["Space Grotesk"],
+        "display-hero-mobile": ["Plus Jakarta Sans"],
+        "label-meta": ["Space Grotesk"],
+        "headline-xl": ["Plus Jakarta Sans"],
+        "body-lg": ["Plus Jakarta Sans"],
+        "title-sm": ["Plus Jakarta Sans"],
+        "label-tag": ["Plus Jakarta Sans"],
+        "headline-md": ["Plus Jakarta Sans"],
+        "display-hero": ["Plus Jakarta Sans"],
+        "body-md": ["Plus Jakarta Sans"],
+        "body-sm": ["Plus Jakarta Sans"]
+      },
+      "fontSize": {
+        "headline-xl-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "label-numeric": ["22px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+        "label-meta": ["11px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+        "headline-xl": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+        "title-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+        "label-tag": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+        "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+        "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+        "body-md": ["15px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "body-sm": ["13px", {"lineHeight": "20px", "fontWeight": "400"}]
+      }
+    }
+  }
+};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[24px]">dashboard_customize</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-title-sm text-title-sm text-text-primary tracking-tight">TravelCMS Studio</span><span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-tertiary font-label-meta text-label-meta uppercase tracking-wider">Live Editor (edit.html)</span></div><span class="font-body-sm text-body-sm text-text-muted">3D2N Expedition Architecture</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-lowest" data-active-classes="bg-surface-container-highest text-text-primary shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.1)]"><a aria-current="page" class="px-space-sm py-2 rounded-lg font-body-sm transition-colors bg-surface-container-highest text-text-primary shadow-[inset_0_1px_1px_0_rgba(255,255,255,0.1)]" data-path="pengaturan-global-&amp;-tampilan" href="#">Pengaturan Global &amp; Tampilan</a><a class="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="konten-hero-&amp;-background" href="#">Konten Hero &amp; Background</a><a class="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="manajemen-paket-3d2n" href="#">Manajemen Paket 3D2N</a><a class="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="promo-&amp;-testimoni" href="#">Promo &amp; Testimoni</a><a class="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="pratinjau-langsung" href="#">Pratinjau Langsung</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="px-space-sm py-2 rounded-lg bg-surface-container-low text-error hover:bg-error-container hover:text-on-error-container font-title-sm text-title-sm transition-colors" onclick="resetConfig()" type="button">Reset ke Default</button><button class="px-space-sm py-2 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary font-title-sm text-title-sm transition-colors" onclick="saveConfig()" type="button">Simpan Perubahan</button><a class="px-space-sm py-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary-container hover:text-on-primary-container font-title-sm text-title-sm transition-colors inline-flex items-center" href="index.html" target="_blank" onclick="return openPreview(this.href);">Buka index.html ↗</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface flex-1 relative overflow-x-hidden"><div class="flex flex-col w-full relative">
+<!-- Ambient Atmospheric Backdrops -->
+<div class="fixed top-24 left-1/4 w-[480px] h-[480px] bg-primary/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="fixed top-1/2 right-10 w-[420px] h-[420px] bg-secondary/10 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+<div class="fixed bottom-10 left-10 w-[360px] h-[360px] bg-tertiary/10 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+<!-- Toast Notification (Simulated localStorage sync) -->
+<div class="fixed bottom-8 right-8 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="saveToast">
+<div class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-surface-container-high shadow-2xl text-text-primary">
+<div class="w-8 h-8 rounded-lg bg-secondary/20 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-text-primary">Perubahan Berhasil Disimpan</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Sinkronisasi lokal tersimpan untuk 'index.html'.</span>
+</div>
+<button class="p-1 rounded-lg text-text-muted hover:text-text-primary hover:bg-surface-variant transition-colors ml-space-xs pointer-events-auto" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Sub-Header Utility Strip / Sticky Bar -->
+<section class="sticky top-20 z-40 w-full bg-surface-container-lowest/90 backdrop-blur-xl px-gutter py-space-sm">
+<div class="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1.5 rounded-full bg-surface-container-high">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-text-primary">Tersinkronisasi: localStorage</span>
+<span class="text-text-muted font-body-sm">|</span>
+<span class="font-label-meta text-label-meta text-text-muted" id="syncTimestamp">Hari ini, 15:42 WIB</span>
+</div>
+<div class="hidden md:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container">
+<span class="material-symbols-outlined text-primary text-[18px]">auto_stories</span>
+<span class="font-body-sm text-body-sm text-text-secondary">3 Paket Aktif</span>
+<span class="text-text-muted">•</span>
+<span class="font-body-sm text-body-sm text-text-secondary">3 Hero Slides</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-text-muted text-[18px]">search</span>
+<input class="w-56 pl-9 pr-3 py-1.5 rounded-lg bg-surface-container-high text-text-primary placeholder:text-text-muted font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Lompat ke segmen..." type="text"/>
+</div>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high text-error hover:bg-error-container hover:text-on-error-container font-title-sm text-title-sm transition-all flex items-center gap-1.5" onclick="resetConfig()" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span>Reset Default</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-fixed hover:text-on-primary-fixed-variant font-title-sm text-title-sm transition-all flex items-center gap-1.5 shadow-lg shadow-primary/20" onclick="saveConfig()" type="button">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Simpan (Ctrl+S)</span>
+</button>
+<a class="px-space-sm py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary-fixed hover:text-on-secondary-fixed font-title-sm text-title-sm transition-all flex items-center gap-1" href="index.html" target="_blank" onclick="return openPreview(this.href);">
+<span>Pratinjau Web</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Main Canvas Container -->
+<div class="max-w-[1280px] mx-auto w-full px-gutter py-space-xl flex flex-col gap-space-xl">
+<!-- Overview Hero Callout -->
+<div class="relative w-full rounded-xl bg-surface-card backdrop-blur-xl p-space-lg shadow-2xl overflow-hidden">
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-surface-container-highest text-primary font-label-meta text-label-meta tracking-wider uppercase">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Studio Konfigurasi Perjalanan</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-text-primary tracking-tight">Katalog Ekspedisi 3D2N Sabang — Merauke — IKN</h1>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+            Kelola identitas visual, hero slide berkala, kartu destinasi, komponen itinerary hari-ke-hari, hingga skrip estimasi harga WhatsApp secara terpusat tanpa reload server.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="flex flex-col items-end text-right">
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-text-muted">Target Rilis</span>
+<span class="font-headline-md text-headline-md text-secondary font-bold">Q2 2025 Live</span>
+<span class="font-body-sm text-body-sm text-text-secondary">3 Flagship Nusantara</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-inner">
+<span class="material-symbols-outlined text-[28px]">travel_explore</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Navigation Anchors -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-2 -mt-4">
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-visual">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+        1. Visual &amp; Tema
+      </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-hero">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+        2. Slide Hero 3D2N
+      </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-packages">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+        3. Katalog &amp; Itinerary
+      </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-promos">
+<span class="w-2 h-2 rounded-full bg-whatsapp-green"></span>
+        4. Kontak &amp; Promo
+      </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-cara-pesan">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+        5. Cara Pesan
+      </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-ritme">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+        6. Ritme Perjalanan
+      </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-promo-musiman">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+        7. Promo Musiman
+      </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-galeri">
+<span class="w-2 h-2 rounded-full bg-whatsapp-green"></span>
+        8. Galeri Perjalanan
+      </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-kurator">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+        9. Kurator Wisata
+      </a>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low text-text-primary hover:bg-surface-container-high transition-colors font-title-sm text-title-sm shrink-0 flex items-center gap-2" href="#section-sync">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+        10. Sync JSON
+      </a>
+</div>
+<!-- ========================================== -->
+<!-- SECTION 1: GLOBAL VISUAL STYLING -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-space-md" id="section-visual">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary/20 text-primary flex items-center justify-center font-label-numeric text-label-numeric">01</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Pengaturan Global &amp; Visual Styling</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Palet warna glassmorphism, tipografi, radius sudut, dan ritme slide.</p>
+</div>
+</div>
+<button class="font-title-sm text-title-sm text-primary hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">palette</span>
+          Kembalikan Skema Warna Default
+        </button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Palette Controller Bento -->
+<div class="lg:col-span-8 rounded-xl bg-surface-card backdrop-blur-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-text-primary">Color Palette &amp; Luminous Orbs</span>
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-text-muted">6 Parameter CSS</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-md">
+<!-- Canvas Color -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Warna Background</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-9 h-9 rounded-lg cursor-pointer bg-transparent border-0 p-0" type="color" value="#0f131d"/>
+<input class="flex-1 px-space-xs py-1.5 rounded-lg bg-surface-container-high text-text-primary font-label-meta text-label-meta outline-none" type="text" value="#0f131d"/>
+</div>
+<span class="font-body-sm text-[11px] text-text-muted">Kanvas dasar obsidian</span>
+</div>
+<!-- Surface Card -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Warna Glass Surface</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-9 h-9 rounded-lg cursor-pointer bg-transparent border-0 p-0" type="color" value="#171b26"/>
+<input class="flex-1 px-space-xs py-1.5 rounded-lg bg-surface-container-high text-text-primary font-label-meta text-label-meta outline-none" type="text" value="#171b26"/>
+</div>
+<span class="font-body-sm text-[11px] text-text-muted">Panel kartu translucent</span>
+</div>
+<!-- Primary Accent -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Aksen Utama (Sky)</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-9 h-9 rounded-lg cursor-pointer bg-transparent border-0 p-0" type="color" value="#89ceff"/>
+<input class="flex-1 px-space-xs py-1.5 rounded-lg bg-surface-container-high text-text-primary font-label-meta text-label-meta outline-none" type="text" value="#89ceff"/>
+</div>
+<span class="font-body-sm text-[11px] text-text-muted">Button &amp; sorotan aktif</span>
+</div>
+<!-- Secondary Emerald -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Aksen Kedua (Emerald)</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-9 h-9 rounded-lg cursor-pointer bg-transparent border-0 p-0" type="color" value="#4edea3"/>
+<input class="flex-1 px-space-xs py-1.5 rounded-lg bg-surface-container-high text-text-primary font-label-meta text-label-meta outline-none" type="text" value="#4edea3"/>
+</div>
+<span class="font-body-sm text-[11px] text-text-muted">Badge promo &amp; konfirmasi</span>
+</div>
+<!-- Text Primary -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Teks Kontras Utama</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-9 h-9 rounded-lg cursor-pointer bg-transparent border-0 p-0" type="color" value="#f8fafc"/>
+<input class="flex-1 px-space-xs py-1.5 rounded-lg bg-surface-container-high text-text-primary font-label-meta text-label-meta outline-none" type="text" value="#f8fafc"/>
+</div>
+<span class="font-body-sm text-[11px] text-text-muted">Headline &amp; nilai angka</span>
+</div>
+<!-- Ambient Glow Orb -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Cahaya Orb Ambient</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-9 h-9 rounded-lg cursor-pointer bg-transparent border-0 p-0" type="color" value="#ffb95f"/>
+<input class="flex-1 px-space-xs py-1.5 rounded-lg bg-surface-container-high text-text-primary font-label-meta text-label-meta outline-none" type="text" value="#ffb95f"/>
+</div>
+<span class="font-body-sm text-[11px] text-text-muted">Aura latar belakang</span>
+</div>
+</div>
+<!-- Color Live Preview Strip -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-text-secondary">Gradient Preview Mode:</span>
+<div class="flex items-center gap-2">
+<div class="h-6 w-16 rounded-full bg-gradient-to-r from-primary to-secondary"></div>
+<div class="h-6 w-16 rounded-full bg-gradient-to-r from-secondary to-tertiary"></div>
+<div class="h-6 w-16 rounded-full bg-gradient-to-r from-tertiary to-error"></div>
+</div>
+</div>
+</div>
+<!-- Typography & Rhythm Controls -->
+<div class="lg:col-span-4 rounded-xl bg-surface-card backdrop-blur-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-text-primary">Tipografi &amp; Geometri</span>
+<span class="material-symbols-outlined text-primary text-[20px]">format_shapes</span>
+</div>
+<!-- Font Family Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Font Family</label>
+<select class="w-full px-space-sm py-2 rounded-lg bg-surface-container-high text-text-primary font-body-md text-body-md outline-none focus:ring-1 focus:ring-primary cursor-pointer">
+<option selected="" value="Plus Jakarta Sans">Plus Jakarta Sans (Modern Clean)</option>
+<option value="Space Grotesk">Space Grotesk (Tech Editorial)</option>
+<option value="Outfit">Outfit (Geometric Elegance)</option>
+<option value="Playfair Display">Playfair Display (Luxury Editorial)</option>
+</select>
+</div>
+<!-- Base Font Size Slider -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Ukuran Teks Dasar</label>
+<span class="font-label-numeric text-[13px] text-primary" id="baseFontVal">15px</span>
+</div>
+<input class="w-full accent-primary cursor-pointer bg-surface-container" max="18" min="13" oninput="document.getElementById('baseFontVal').innerText = this.value + 'px'" type="range" value="15"/>
+</div>
+<!-- Headline Scale -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Skala Hero Headline</label>
+<span class="font-label-numeric text-[13px] text-primary" id="heroFontVal">56px</span>
+</div>
+<input class="w-full accent-primary cursor-pointer bg-surface-container" max="68" min="36" oninput="document.getElementById('heroFontVal').innerText = this.value + 'px'" type="range" value="56"/>
+</div>
+<!-- Corner Radius Presets -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Radius Sudut Elemen</label>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="py-1.5 px-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-text-secondary font-label-meta text-label-meta text-center" type="button">8px (Sm)</button>
+<button class="py-1.5 px-2 rounded-xl bg-primary text-on-primary font-label-meta text-label-meta text-center font-bold" type="button">12px (Xl)</button>
+<button class="py-1.5 px-2 rounded-full bg-surface-container hover:bg-surface-container-high text-text-secondary font-label-meta text-label-meta text-center" type="button">9999px (Pill)</button>
+</div>
+</div>
+<!-- Auto Slide Duration -->
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-[14px] text-text-primary">Durasi Hero Auto-Slide</span>
+<span class="font-label-numeric text-[14px] text-secondary" id="slideDurationVal">10 Detik</span>
+</div>
+<input class="w-full accent-secondary cursor-pointer bg-surface-container-high" max="20" min="4" oninput="document.getElementById('slideDurationVal').innerText = this.value + ' Detik'" type="range" value="10"/>
+<span class="font-body-sm text-[11px] text-text-muted">Interval transisi antar destinasi Sabang, Merauke, IKN</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 2: HERO & BACKGROUND MANAGER -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-space-md" id="section-hero">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-secondary/20 text-secondary flex items-center justify-center font-label-numeric text-label-numeric">02</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Konten Hero &amp; 3 Background Slides</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Sesuaikan citra fotografi visual, tagline naratif, serta penawaran pembuka.</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-text-secondary font-label-meta text-label-meta">
+<span class="material-symbols-outlined text-[16px] text-whatsapp-green">photo_library</span>
+<span>Resolusi Optimal: 1920 × 1080px (16:9 Landscape)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Slide 1: Sabang Bahari -->
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-sm group">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-high">
+<img alt="Sabang Bahari 3D2N" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ALJJyrBttcQds8SN437H9RMKOz8C3hcbeEMiR1-3dTBXGx3vjv6nViCJ0PUgUWhjQ1FBk9HAzpoeSPFa7rLCV6W6E3mi8DZFwEC5dyDrijJr6jDIVWr79ari-dBP_Z2fH7JlUE0hAcR4qfg9l_mWzIOAfBV3oNuDjDMGNJD8CBDFtF4OvLXir5jK6wpeFdmQ7eKWoWEr3q0omsp6bXLA28gYXmC3yWbr57SgLJ-5Nu3Vffc0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-primary font-label-meta text-label-meta uppercase">
+              Slide 01 • Sabang
+            </div>
+<button class="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-surface-container-high/90 backdrop-blur-md text-text-primary hover:bg-primary hover:text-on-primary font-label-meta text-label-meta transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+              Ganti Foto
+            </button>
+</div>
+<div class="flex flex-col gap-space-xs mt-1">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Badge Penanda</label>
+<input class="w-full px-space-sm py-1.5 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary" type="text" value="Destinasi 01 • Ujung Barat Indonesia"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Headline Utama</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none focus:ring-1 focus:ring-primary resize-none" rows="2">Jelajahi Bahari Sabang, Titik Nol Kilometer</textarea>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi Pendek</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary resize-none" rows="2">Nikmati snorkeling terumbu karang eksotis Pulau Rubiah, pesona tebing laut Pantai Iboih, serta sertifikat resmi Titik Nol Nusantara dalam paket boutique 3 Hari 2 Malam.</textarea>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Tarif Mulai Dari</label>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1.5 rounded-lg bg-surface-container-high text-primary font-label-meta text-label-meta">IDR</span>
+<input class="flex-1 px-space-sm py-1.5 rounded-lg bg-surface-container text-text-primary font-label-numeric text-[14px] outline-none" type="text" value="3.450.000 / pax"/>
+</div>
+</div>
+</div>
+<!-- Slide 2: Merauke Wasur -->
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-sm group">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-high">
+<img alt="Merauke Sabana Wasur" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ALJJyrCDxGLgIt6iurutLvrpqkt_3OWdo4A5EL9ft7KoPHvyOYscFbqGuxuqKZA_BoUj0m-6o5G9Qc-Zyb_cH8-9PUoGmxeiPeqXkyPZ83viFz_E_0crMurPItnPF2XDFaMEBVkuhLqiv5nFz1lrhAxL46wr9bfNmPMCr9Nunwgzmj0mMoAgxyDFdwYjL2MxeJ-1hKtT5T33_Fxh0hgx0ps-T83AFiUVHhsWLrzKWZbPbi7v"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-meta text-label-meta uppercase">
+              Slide 02 • Merauke
+            </div>
+<button class="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-surface-container-high/90 backdrop-blur-md text-text-primary hover:bg-tertiary hover:text-on-tertiary font-label-meta text-label-meta transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+              Ganti Foto
+            </button>
+</div>
+<div class="flex flex-col gap-space-xs mt-1">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Badge Penanda</label>
+<input class="w-full px-space-sm py-1.5 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary" type="text" value="Destinasi 02 • Tapal Batas Timur Nusantara"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Headline Utama</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none focus:ring-1 focus:ring-primary resize-none" rows="2">Magis Sabana Merauke &amp; Tugu Kapsul Waktu</textarea>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi Pendek</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary resize-none" rows="2">Menyusuri eksotisme rumah semut raksasa Musamus, safari fauna Taman Nasional Wasur, hingga batas negara PLBN Sota RI-PNG dengan pemandu adat bersertifikat.</textarea>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Tarif Mulai Dari</label>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1.5 rounded-lg bg-surface-container-high text-tertiary font-label-meta text-label-meta">IDR</span>
+<input class="flex-1 px-space-sm py-1.5 rounded-lg bg-surface-container text-text-primary font-label-numeric text-[14px] outline-none" type="text" value="4.850.000 / pax"/>
+</div>
+</div>
+</div>
+<!-- Slide 3: IKN Nusantara -->
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-sm group">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-high">
+<img alt="IKN Nusantara Megastructure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ALJJyrABA9BhqxWmVvQj8HwlzhLiNJtkiQOThlzGmtMvGW-YN-R8bAUXJ4rI7_sYYmMEislLFfRxri61eiDm3sTTPjNYCM7Q-fI5Hvg0betQcl7x4Nn0A-3CRccW_KOItP0je0ThXWj6nhtc4hx7kr7W0LNgQA4RvImCUnsdCiAUs66XP2jx9FfJ-OUWgzjBsfG6UfSSh5YfAF51lHecdPZqg83MyhI5UiDICxtOliIWu-5m"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute top-2 left-2 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-meta text-label-meta uppercase">
+              Slide 03 • IKN
+            </div>
+<button class="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-surface-container-high/90 backdrop-blur-md text-text-primary hover:bg-secondary hover:text-on-secondary font-label-meta text-label-meta transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">edit</span>
+              Ganti Foto
+            </button>
+</div>
+<div class="flex flex-col gap-space-xs mt-1">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Badge Penanda</label>
+<input class="w-full px-space-sm py-1.5 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary" type="text" value="Destinasi 03 • Ibu Kota Masa Depan"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Headline Utama</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none focus:ring-1 focus:ring-primary resize-none" rows="2">Mahakarya IKN Nusantara &amp; Hutan Hujan Borneo</textarea>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi Pendek</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none focus:ring-1 focus:ring-primary resize-none" rows="2">Saksikan sejarah kebangkitan Plaza Seremoni KIPP, kemegahan Istana Garuda, serta sensasi titian tajuk Canopy Bridge Bangkirai dalam kenyamanan akomodasi VIP.</textarea>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Tarif Mulai Dari</label>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-meta text-label-meta">IDR</span>
+<input class="flex-1 px-space-sm py-1.5 rounded-lg bg-surface-container text-text-primary font-label-numeric text-[14px] outline-none" type="text" value="3.950.000 / pax"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 3: 3D2N PACKAGES & ITINERARY -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-space-md" id="section-packages">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-tertiary/20 text-tertiary flex items-center justify-center font-label-numeric text-label-numeric">03</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Manajemen Paket Wisata 3D2N &amp; Itinerary</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Konfigurasi lengkap rincian 3 hari 2 malam, fasilitas paket, dan alur harian.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-2 rounded-lg bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-title-sm text-title-sm transition-all flex items-center gap-1.5" onclick="alert('Fitur tambah paket kustom siap dikonfigurasi.')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Tambah Paket Baru</span>
+</button>
+</div>
+</div>
+<!-- Package 1 Editor: Sabang -->
+<details class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl open:ring-1 open:ring-primary/40 transition-all group" open="">
+<summary class="flex items-center justify-between cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img alt="Sabang Thumb" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrBttcQds8SN437H9RMKOz8C3hcbeEMiR1-3dTBXGx3vjv6nViCJ0PUgUWhjQ1FBk9HAzpoeSPFa7rLCV6W6E3mi8DZFwEC5dyDrijJr6jDIVWr79ari-dBP_Z2fH7JlUE0hAcR4qfg9l_mWzIOAfBV3oNuDjDMGNJD8CBDFtF4OvLXir5jK6wpeFdmQ7eKWoWEr3q0omsp6bXLA28gYXmC3yWbr57SgLJ-5Nu3Vffc0"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm text-text-primary">Paket 01: Sabang Bahari Ocean Quest 3D2N</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary font-label-meta text-label-meta uppercase">Aktif</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">Sabang, Aceh • Rp 3.450.000 / pax • Rating 4.9</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-text-muted group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="pt-space-md mt-space-md border-t border-surface-variant/30 flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="flex flex-col gap-space-xs md:col-span-2">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Nama Paket</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none focus:ring-1 focus:ring-primary" type="text" value="Ekspedisi Sabang 3D2N"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Lokasi Tag</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-md text-body-md outline-none" type="text" value="Sabang, D.I. Aceh"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Rating Bintang</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-md text-body-md outline-none" type="text" value="⭐ 4.9 (120+ pax)"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Harga per Pax (Rupiah)</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-[16px] outline-none" type="number" value="3450000"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Minimal Keberangkatan</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-md text-body-md outline-none" type="text" value="2 Pax (Private Trip)"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Fasilitas Unggulan (Comma-separated)</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Speedboat Private, Snorkeling Rubiah, Resort Tepi Laut, Dokumentasi Drone"/>
+</div>
+</div>
+<!-- Day 1, 2, 3 Itinerary Details -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-sm text-title-sm text-text-primary">Timeline &amp; Agenda Harian (3D2N)</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center font-label-numeric text-[12px]">H1</span>
+<span class="font-title-sm text-[14px] text-text-primary">Hari 1: Arrival &amp; Tugu Nol KM</span>
+</div>
+<textarea class="w-full p-space-xs rounded bg-surface-container-high text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Penjemputan di Pelabuhan Balohan, check-in resort bahari, eksplorasi Gua Sarang, sunset spektakuler di Monumen Kilometer Nol Indonesia.</textarea>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center font-label-numeric text-[12px]">H2</span>
+<span class="font-title-sm text-[14px] text-text-primary">Hari 2: Safari Pulau Rubiah</span>
+</div>
+<textarea class="w-full p-space-xs rounded bg-surface-container-high text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Private boat cruise ke Pulau Rubiah Marine Park, snorkeling bersama clownfish dan soft corals, santap siang kuliner Sate Gurita Sabang.</textarea>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center font-label-numeric text-[12px]">H3</span>
+<span class="font-title-sm text-[14px] text-text-primary">Hari 3: Benteng Anoi Itam &amp; Kepulangan</span>
+</div>
+<textarea class="w-full p-space-xs rounded bg-surface-container-high text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Sunrise di Pantai Pasir Putih Iboih, kunjungan Benteng Jepang Anoi Itam, berburu Bakpia Sabang, transfer menuju Pelabuhan Balohan.</textarea>
+</div>
+</div>
+</div>
+</div>
+</details>
+<!-- Package 2 Editor: Merauke -->
+<details class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl open:ring-1 open:ring-tertiary/40 transition-all group">
+<summary class="flex items-center justify-between cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img alt="Merauke Thumb" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrCDxGLgIt6iurutLvrpqkt_3OWdo4A5EL9ft7KoPHvyOYscFbqGuxuqKZA_BoUj0m-6o5G9Qc-Zyb_cH8-9PUoGmxeiPeqXkyPZ83viFz_E_0crMurPItnPF2XDFaMEBVkuhLqiv5nFz1lrhAxL46wr9bfNmPMCr9Nunwgzmj0mMoAgxyDFdwYjL2MxeJ-1hKtT5T33_Fxh0hgx0ps-T83AFiUVHhsWLrzKWZbPbi7v"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm text-text-primary">Paket 02: Merauke Safari Wasur &amp; Tapal Batas 3D2N</span>
+<span class="px-2 py-0.5 rounded-full bg-tertiary/20 text-tertiary font-label-meta text-label-meta uppercase">Aktif</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">Merauke, Papua Selatan • Rp 4.850.000 / pax • Rating 5.0</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-text-muted group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="pt-space-md mt-space-md border-t border-surface-variant/30 flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="flex flex-col gap-space-xs md:col-span-2">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Nama Paket</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Ekspedisi Merauke 3D2N"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Lokasi Tag</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-md text-body-md outline-none" type="text" value="Merauke, Papua Selatan"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Rating Bintang</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-md text-body-md outline-none" type="text" value="⭐ 4.95 (90+ pax)"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Harga per Pax (Rupiah)</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-[16px] outline-none" type="number" value="4850000"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Minimal Keberangkatan</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-md text-body-md outline-none" type="text" value="4 Pax (Safari 4WD)"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Fasilitas Unggulan</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Jeep 4x4 Wasur, Permit Adat, Hotel Bintang 4, Dokumentasi Foto Rimba"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-sm text-title-sm text-text-primary">Timeline &amp; Agenda Harian (3D2N)</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="font-title-sm text-[14px] text-text-primary">Hari 1: Kapsul Waktu &amp; Sota</span>
+<textarea class="w-full p-space-xs rounded bg-surface-container-high text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Kunjungan Monumen Kapsul Waktu, safari ke Tapal Batas RI-PNG di Sota, observasi sarang semut Musamus setinggi 4 meter.</textarea>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="font-title-sm text-[14px] text-text-primary">Hari 2: Savana Liar TN Wasur</span>
+<textarea class="w-full p-space-xs rounded bg-surface-container-high text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Eksplorasi ekosistem rawa dan savana Wasur, observasi walabi dan burung kasuari liar, bersua masyarakat suku Kanum.</textarea>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="font-title-sm text-[14px] text-text-primary">Hari 3: Pantai Lampu Satu</span>
+<textarea class="w-full p-space-xs rounded bg-surface-container-high text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Pagi di pantai lumpur Lampu Satu melihat aktivitas nelayan tradisional, belanja kerajinan kulit kayu, penerbangan kembali.</textarea>
+</div>
+</div>
+</div>
+</div>
+</details>
+<!-- Package 3 Editor: IKN -->
+<details class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl open:ring-1 open:ring-secondary/40 transition-all group">
+<summary class="flex items-center justify-between cursor-pointer list-none select-none">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img alt="IKN Thumb" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ALJJyrABA9BhqxWmVvQj8HwlzhLiNJtkiQOThlzGmtMvGW-YN-R8bAUXJ4rI7_sYYmMEislLFfRxri61eiDm3sTTPjNYCM7Q-fI5Hvg0betQcl7x4Nn0A-3CRccW_KOItP0je0ThXWj6nhtc4hx7kr7W0LNgQA4RvImCUnsdCiAUs66XP2jx9FfJ-OUWgzjBsfG6UfSSh5YfAF51lHecdPZqg83MyhI5UiDICxtOliIWu-5m"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm text-text-primary">Paket 03: Horizon Ibu Kota Nusantara (IKN) 3D2N</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary/20 text-secondary font-label-meta text-label-meta uppercase">Aktif</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">Penajam Paser Utara, Kaltim • Rp 3.950.000 / pax • Rating 4.8</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-text-muted group-open:rotate-180 transition-transform">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="pt-space-md mt-space-md border-t border-surface-variant/30 flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md">
+<div class="flex flex-col gap-space-xs md:col-span-2">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Nama Paket</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Visi Masa Depan IKN 3D2N"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Lokasi Tag</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-md text-body-md outline-none" type="text" value="IKN Nusantara, Kaltim"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Rating Bintang</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-md text-body-md outline-none" type="text" value="⭐ 4.88 (150+ pax)"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Harga per Pax (Rupiah)</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-[16px] outline-none" type="number" value="3950000"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Minimal Keberangkatan</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-md text-body-md outline-none" type="text" value="2 Pax (All-electric Vehicle)"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Fasilitas Unggulan</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="VIP Access Pass KIPP, Bus Listrik EV, Guide Arsitektur Resmi, Glamping IKN"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-sm text-title-sm text-text-primary">Timeline &amp; Agenda Harian (3D2N)</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="font-title-sm text-[14px] text-text-primary">Hari 1: KIPP &amp; Plaza Seremoni</span>
+<textarea class="w-full p-space-xs rounded bg-surface-container-high text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Penjemputan di Balikpapan (BPN), melintasi Tol Jembatan Pulau Balang, inspeksi arsitektur Plaza Seremoni dan Bukit Bengkirai.</textarea>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="font-title-sm text-[14px] text-text-primary">Hari 2: Istana Garuda &amp; Mentawir</span>
+<textarea class="w-full p-space-xs rounded bg-surface-container-high text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Sesi foto eksklusif area Istana Presiden Garuda, kunjungan Persemaian Mentawir untuk reboisasi, sunset di Danau Retensi IKN.</textarea>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<span class="font-title-sm text-[14px] text-text-primary">Hari 3: Wisata Kuliner Mahakam</span>
+<textarea class="w-full p-space-xs rounded bg-surface-container-high text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Kunjungan Rumah Adat Dayak Paser, santap Kepiting Kenari khas pesisir Balikpapan, pengantaran ke Bandara SAMS Sepinggan.</textarea>
+</div>
+</div>
+</div>
+</div>
+</details>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 4: CONTACT, PROMO & TESTIMONIALS -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-space-md" id="section-promos">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-whatsapp-green/20 text-whatsapp-green flex items-center justify-center font-label-numeric text-label-numeric">04</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Pengaturan Promo, WhatsApp API &amp; Testimoni</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Pesan otomatis WhatsApp untuk checkout instan dan manajemen bukti sosial.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- WhatsApp API Setting Bento -->
+<div class="lg:col-span-6 rounded-xl bg-surface-card backdrop-blur-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-whatsapp-green text-[22px]">chat</span>
+<span class="font-title-sm text-title-sm text-text-primary">Integrasi WhatsApp Booking Engine</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-whatsapp-green/20 text-whatsapp-green font-label-meta text-label-meta uppercase">Aktif Direct URL</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Nomor WhatsApp Admin Reservasi</label>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-2 rounded-lg bg-surface-container-high text-text-primary font-label-meta text-label-meta">+62</span>
+<input class="flex-1 px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-[15px] outline-none" type="text" value="81234567890"/>
+</div>
+<span class="font-body-sm text-[12px] text-text-muted">Gunakan format internasional tanpa spasi atau tanda hubung.</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Template Pesan Otomatis (URL Encoded Variable)</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none resize-none leading-relaxed" rows="4">Halo Admin Nocturne Voyage! Saya ingin mengonfirmasi pemesanan Paket 3D2N:
+- Destinasi: {PACKAGE_NAME}
+- Jumlah Peserta: {PAX_COUNT} Pax
+- Perkiraan Total: {ESTIMATED_TOTAL}
+Mohon info ketersediaan slot tanggal keberangkatan. Terima kasih!</textarea>
+<span class="font-body-sm text-[11px] text-text-muted">Placeholder `{PACKAGE_NAME}`, `{PAX_COUNT}`, dan `{ESTIMATED_TOTAL}` dihitung secara real-time pada kalkulator index.html.</span>
+</div>
+</div>
+<!-- Promo Banner & Discount Rule -->
+<div class="lg:col-span-6 rounded-xl bg-surface-card backdrop-blur-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[22px]">loyalty</span>
+<span class="font-title-sm text-title-sm text-text-primary">Promo Musiman &amp; Early Bird</span>
+</div>
+<span class="font-label-meta text-label-meta uppercase tracking-wider text-text-muted">Auto-Applied</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Kode Voucher Promo</label>
+<input class="px-space-sm py-1.5 rounded-lg bg-surface-container-high text-primary font-label-numeric text-[14px] outline-none" type="text" value="NOCTURNE3D2N"/>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Diskon per Pax</label>
+<input class="px-space-sm py-1.5 rounded-lg bg-surface-container-high text-secondary font-label-numeric text-[14px] outline-none" type="text" value="Rp 250.000 (Early Bird)"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Banner Teks Berjalan (Marquee Top Bar)</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Promo Musim Liburan: Diskon Rp 500.000 untuk pemesanan rombongan min. 4 pax ke Merauke &amp; IKN! Kuota terbatas."/>
+</div>
+<!-- Inclusions & Exclusions Quick Editor -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-secondary">Sudah Termasuk (Included)</label>
+<textarea class="w-full p-space-xs rounded-lg bg-surface-container text-text-secondary font-body-sm text-[12px] outline-none resize-none" rows="3">Akomodasi 2 malam, transportasi privat, tiket masuk destinasi, konsumsi 3x sehari, pemandu lokal bersertifikat.</textarea>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-error">Belum Termasuk (Excluded)</label>
+<textarea class="w-full p-space-xs rounded-lg bg-surface-container text-text-secondary font-body-sm text-[12px] outline-none resize-none" rows="3">Tiket pesawat PP ke kota awal, pengeluaran pribadi, asuransi perjalanan opsional, tipping driver &amp; guide.</textarea>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md" id="section-cara-pesan">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed/20 text-primary-fixed flex items-center justify-center font-label-numeric text-label-numeric">05</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Cara Mudah Pesan</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Atur empat langkah alur pemesanan pada halaman utama.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Langkah 01 — Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Pilih Destinasi 3D2N"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Tentukan paket impian Anda antara keindahan bahari Sabang, tapal batas Merauke, atau keajaiban arsitektur IKN Nusantara.</textarea>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Langkah 02 — Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Konsultasi &amp; Tanggal"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Hubungi Concierge kami via WhatsApp. Diskusikan tanggal penerbangan, kustomisasi kebutuhan khusus, atau open trip yang tersedia.</textarea>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Langkah 03 — Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Konfirmasi &amp; DP Aman"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Lakukan pembayaran tanda jadi (DP 30%) melalui rekening resmi perusahaan berbadan hukum. Invoice resmi dikirim otomatis.</textarea>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Langkah 04 — Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="E-Voucher &amp; Siap Jalan"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Terima E-Ticket, kontak guide personal, serta panduan packing trip. Tim kami siap menyambut langsung di gerbang kedatangan bandara.</textarea>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md" id="section-ritme">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-secondary/20 text-secondary flex items-center justify-center font-label-numeric text-label-numeric">06</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Ritme Standar Perjalanan</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Sesuaikan tajuk dan narasi ritme 3 Hari 2 Malam.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Label Hari 01</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Kedatangan &amp; Eksplorasi Awal"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="VIP Airport Pickup &amp; Golden Sunset"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Penjemputan eksklusif oleh pemandu resmi di bandara tujuan, transfer armada ber-AC, check-in resort terpilih, dilanjutkan observasi lanskap awal dan santapan senja kuliner khas lokal.</textarea>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Sorotan</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-[12px] outline-none resize-none" rows="2">Private airport transfer
+Welcome dinner hidangan otentik</textarea>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Label Hari 02</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Petualangan Inti &amp; Ikonik"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Full-Day Iconic Expedition"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Hari petualangan penuh: snorkeling karang Rubiah (Sabang) / safari savana Wasur &amp; PLBN Sota (Merauke) / tur inti istana Garuda IKN. Didampingi dokumentasi profesional dan briefing edukatif.</textarea>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Sorotan</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-[12px] outline-none resize-none" rows="2">Seluruh izin &amp; simaksi resmi KIPP/TN
+Peralatan ekspedisi premium</textarea>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Label Hari 03</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Oleh-oleh, Kuliner &amp; Kepulangan"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Heritage Tour &amp; Airport Drop-off"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Sarapan santai di resort, tur arsitektur budaya sekitar, berburu oleh-oleh kriya lokal terbaik langsung dari pengrajin, kemudian pengantaran kembali ke bandara dengan sertifikat perjalanan resmi.</textarea>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Sorotan</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-[12px] outline-none resize-none" rows="2">Sertifikat resmi tanda jelajah
+Pengantaran on-time ke penerbangan</textarea>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md" id="section-promo-musiman">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-tertiary/20 text-tertiary flex items-center justify-center font-label-numeric text-label-numeric">07</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Promo Musiman</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Kelola tiga kartu penawaran eksklusif dan jadwal open trip.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Badge</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-meta text-label-meta outline-none" type="text" value="EARLY BIRD TRIP"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Sabang Bahari Sunset Escapade"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Jadwal open trip keberangkatan akhir pekan. Nikmati keheningan teluk Iboih dan sertifikat Nol KM dengan diskon khusus pemesanan H-14.</textarea>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Jadwal</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="12 - 14 Mei 2025"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Meeting Point</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Bandara BTJ Banda Aceh"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Tipe Trip</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Open Trip (Maks 10 Pax)"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Harga Coret</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-body-sm outline-none" type="text" value="Rp 3.850.000"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Harga Promo</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-body-sm outline-none" type="text" value="Rp 3.150.000"/>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Badge</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-meta text-label-meta outline-none" type="text" value="BEST SELLER EXPEDITION"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Merauke Safari Musim Kering"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Momen paling sempurna menyusuri sabana TN Wasur dengan kawanan migrasi burung air dan wallaby liar di dekat Musamus raksasa.</textarea>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Jadwal</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="23 - 25 Mei 2025"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Meeting Point</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Bandara MKQ Merauke"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Tipe Trip</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Small Group (Maks 8 Pax)"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Harga Coret</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-body-sm outline-none" type="text" value="Rp 5.250.000"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Harga Promo</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-body-sm outline-none" type="text" value="Rp 4.450.000"/>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Badge</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-meta text-label-meta outline-none" type="text" value="CORPORATE &amp; VIP"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="IKN Study Tour &amp; Canopy Walk"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="3">Paket eksklusif bagi institusi, investor &amp; keluarga. Akses menyeluruh ke zona KIPP, istana burung garuda, dan glamping IKN.</textarea>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Jadwal</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Bebas Pilih Tanggal"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Meeting Point</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Bandara BPN Balikpapan"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Tipe Trip</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Private Group VIP"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Harga Coret</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-body-sm outline-none" type="text" value=""/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Harga Promo</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-numeric text-body-sm outline-none" type="text" value="Rp 3.650.000"/>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md" id="section-galeri">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-whatsapp-green/20 text-whatsapp-green flex items-center justify-center font-label-numeric text-label-numeric">08</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Galeri Perjalanan</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Ganti caption dan sumber gambar dokumentasi perjalanan.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Caption 1</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Keindahan Bawah Laut Sabang"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">URL Gambar 1</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-meta text-[11px] outline-none" type="text" value="https://lh3.googleusercontent.com/aida/ALJJyrBttcQds8SN437H9RMKOz8C3hcbeEMiR1-3dTBXGx3vjv6nViCJ0PUgUWhjQ1FBk9HAzpoeSPFa7rLCV6W6E3mi8DZFwEC5dyDrijJr6jDIVWr79ari-dBP_Z2fH7JlUE0hAcR4qfg9l_mWzIOAfBV3oNuDjDMGNJD8CBDFtF4OvLXir5jK6wpeFdmQ7eKWoWEr3q0omsp6bXLA28gYXmC3yWbr57SgLJ-5Nu3Vffc0"/>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Caption 2</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Misteri Musamus Merauke"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">URL Gambar 2</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-meta text-[11px] outline-none" type="text" value="https://lh3.googleusercontent.com/aida/ALJJyrCDxGLgIt6iurutLvrpqkt_3OWdo4A5EL9ft7KoPHvyOYscFbqGuxuqKZA_BoUj0m-6o5G9Qc-Zyb_cH8-9PUoGmxeiPeqXkyPZ83viFz_E_0crMurPItnPF2XDFaMEBVkuhLqiv5nFz1lrhAxL46wr9bfNmPMCr9Nunwgzmj0mMoAgxyDFdwYjL2MxeJ-1hKtT5T33_Fxh0hgx0ps-T83AFiUVHhsWLrzKWZbPbi7v"/>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Caption 3</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Arsitektur IKN Nusantara"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">URL Gambar 3</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-meta text-[11px] outline-none" type="text" value="https://lh3.googleusercontent.com/aida/ALJJyrABA9BhqxWmVvQj8HwlzhLiNJtkiQOThlzGmtMvGW-YN-R8bAUXJ4rI7_sYYmMEislLFfRxri61eiDm3sTTPjNYCM7Q-fI5Hvg0betQcl7x4Nn0A-3CRccW_KOItP0je0ThXWj6nhtc4hx7kr7W0LNgQA4RvImCUnsdCiAUs66XP2jx9FfJ-OUWgzjBsfG6UfSSh5YfAF51lHecdPZqg83MyhI5UiDICxtOliIWu-5m"/>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Caption 4</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Hospitality Eksklusif Mitra Kami"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">URL Gambar 4</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-label-meta text-[11px] outline-none" type="text" value="https://lh3.googleusercontent.com/aida-public/AB6AXuAb_BnwS0keAzexJYe_r56FTaOHldAqVi73SymHXlbdZ6XBG7RvR2QR1EBbJmpPx_1_wptnltFun8v-oLY3OwRntYswbXYnLsULW4aygiKdGicIXnhExI55XeqOvzjPk4fQD_f7oBLTu-a4YTx88SKFZc9JcvK2M3-GHXTqR5RbKCUNj4LcIzsmZdrEfzDn8rSbc0cYPbRE9eumfENVLbzc8dVMGyk_0cqyOl1Tqq_oIgR3lV63S1ST"/>
+</div>
+</div>
+</section>
+<section class="flex flex-col gap-space-md" id="section-kurator">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary/20 text-primary flex items-center justify-center font-label-numeric text-label-numeric">09</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Kurator Wisata</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Atur judul, narasi, pilar nilai, dan kutipan komitmen.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Judul Utama</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-title-sm text-title-sm outline-none" type="text" value="Kurator Wisata 3D2N Terdepan Menjelajahi Titik Bersejarah Nusantara"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Narasi Perusahaan</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="4">Nusantara Voyage didirikan atas dedikasi mendalam untuk mempertemukan para profesional, penjelajah dan keluarga dengan destinasi paling ikonik di tanah air. Kami mengkhususkan diri pada format perjalanan ringkas 3 Hari 2 Malam yang dipadatkan secara cermat tanpa mengorbankan privasi dan relaksasi.</textarea>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Kutipan Komitmen</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-body-sm outline-none resize-none" rows="2">"Menyuguhkan pesona terdalam Indonesia dengan kenyamanan yang selayaknya Anda dapatkan."</textarea>
+</div>
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-md shadow-xl flex flex-col gap-space-xs">
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Pilar 1 — Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Pemandu Lokal Resmi"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Pilar 1 — Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-[12px] outline-none resize-none" rows="2">Seluruh tur dipandu oleh warga lokal berlisensi HPI yang memahami adat dan kearifan setempat.</textarea>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Pilar 2 — Judul</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Standar Keselamatan VIP"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Pilar 2 — Deskripsi</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container text-text-secondary font-body-sm text-[12px] outline-none resize-none" rows="2">Kendaraan terawat, perlengkapan snorkeling terstandar SNI, serta asuransi perjalanan terpercaya.</textarea>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Label Mitra</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Official Travel Partner"/>
+<label class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Keterangan Mitra</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container text-text-primary font-body-sm text-body-sm outline-none" type="text" value="Terdaftar di Kemenparekraf RI"/>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- SECTION 10: LIVE JSON DATA SYNC & BACKUP -->
+<!-- ========================================== -->
+<section class="flex flex-col gap-space-md" id="section-sync">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed/20 text-primary-fixed flex items-center justify-center font-label-numeric text-label-numeric">10</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Interactive Live Preview &amp; JSON Data Sync</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Ekspor dan impor skema data untuk backup offline atau migrasi produksi.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high text-text-primary hover:bg-surface-variant font-title-sm text-title-sm transition-all flex items-center gap-1" onclick="exportDataJSON()" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Ekspor JSON</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-high text-text-primary hover:bg-surface-variant font-title-sm text-title-sm transition-all flex items-center gap-1" onclick="document.getElementById('importFile').click()" type="button">
+<span class="material-symbols-outlined text-[16px]">upload</span>
+<span>Impor JSON</span>
+</button>
+<input class="hidden" id="importFile" onchange="importDataJSON(this.files[0])" type="file"/>
+</div>
+</div>
+<!-- JSON Code Window Card -->
+<div class="rounded-xl bg-surface-card backdrop-blur-xl p-space-lg shadow-2xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-secondary inline-block"></span>
+<span class="font-label-meta text-label-meta text-text-muted ml-2">localStorage['NOCTURNE_VOYAGE_DATA']</span>
+</div>
+<span class="font-label-meta text-label-meta text-secondary">JSON Validated • Read-Only Mirror</span>
+</div>
+<div class="w-full p-space-md rounded-lg bg-surface-container-lowest font-mono text-[12px] leading-relaxed text-text-secondary overflow-x-auto max-h-72 select-all">
+<pre class="text-text-primary"><code>{
+  "system": {
+    "version": "2.4.0-nocturne",
+    "lastUpdated": "2025-05-18T08:42:00.000Z",
+    "theme": {
+      "bg": "#0f131d",
+      "surface": "#171b26",
+      "primary": "#0ea5e9",
+      "fontFamily": "Plus Jakarta Sans",
+      "slideDurationSec": 10
+    }
+  },
+  "contact": {
+    "whatsapp": "+6281234567890",
+    "voucherCode": "NOCTURNE3D2N",
+    "voucherDiscount": 250000
+  },
+  "destinations": [
+    {
+      "id": "sabang-3d2n",
+      "title": "Sabang Bahari Ocean Quest",
+      "location": "Sabang, D.I. Aceh",
+      "pricePax": 3450000,
+      "rating": 4.9,
+      "badge": "Destinasi 01 • Ujung Barat",
+      "thumb": "https://lh3.googleusercontent.com/aida/ALJJyrBttcQds8SN437H9RMKOz8C3hcbeEMiR1-3dTBXGx3vjv6nViCJ0PUgUWhjQ1FBk9HAzpoeSPFa7rLCV6W6E3mi8DZFwEC5dyDrijJr6jDIVWr79ari-dBP_Z2fH7JlUE0hAcR4qfg9l_mWzIOAfBV3oNuDjDMGNJD8CBDFtF4OvLXir5jK6wpeFdmQ7eKWoWEr3q0omsp6bXLA28gYXmC3yWbr57SgLJ-5Nu3Vffc0"
+    },
+    {
+      "id": "merauke-3d2n",
+      "title": "Magis Sabana Merauke &amp; Tugu Kapsul Waktu",
+      "location": "Merauke, Papua Selatan",
+      "pricePax": 4850000,
+      "rating": 5.0,
+      "badge": "Destinasi 02 • Tapal Batas Timur",
+      "thumb": "https://lh3.googleusercontent.com/aida/ALJJyrCDxGLgIt6iurutLvrpqkt_3OWdo4A5EL9ft7KoPHvyOYscFbqGuxuqKZA_BoUj0m-6o5G9Qc-Zyb_cH8-9PUoGmxeiPeqXkyPZ83viFz_E_0crMurPItnPF2XDFaMEBVkuhLqiv5nFz1lrhAxL46wr9bfNmPMCr9Nunwgzmj0mMoAgxyDFdwYjL2MxeJ-1hKtT5T33_Fxh0hgx0ps-T83AFiUVHhsWLrzKWZbPbi7v"
+    },
+    {
+      "id": "ikn-3d2n",
+      "title": "Horizon Ibu Kota Nusantara (IKN)",
+      "location": "IKN Nusantara, Kaltim",
+      "pricePax": 3950000,
+      "rating": 4.8,
+      "badge": "Destinasi 03 • Ibu Kota Masa Depan",
+      "thumb": "https://lh3.googleusercontent.com/aida/ALJJyrABA9BhqxWmVvQj8HwlzhLiNJtkiQOThlzGmtMvGW-YN-R8bAUXJ4rI7_sYYmMEislLFfRxri61eiDm3sTTPjNYCM7Q-fI5Hvg0betQcl7x4Nn0A-3CRccW_KOItP0je0ThXWj6nhtc4hx7kr7W0LNgQA4RvImCUnsdCiAUs66XP2jx9FfJ-OUWgzjBsfG6UfSSh5YfAF51lHecdPZqg83MyhI5UiDICxtOliIWu-5m"
+    }
+  ]
+}</code></pre>
+</div>
+</div>
+</section>
+</div>
+<script>
+    const CONFIG_KEY = 'nocturne_travel_config';
+    const DEFAULT_TITLES = [
+      'Jelajahi Bahari Sabang, Titik Nol Kilometer',
+      'Magis Sabana Merauke & Tugu Kapsul Waktu',
+      'Mahakarya IKN Nusantara & Hutan Hujan Borneo'
+    ];
+    let previewWindow = null;
+    let DEFAULT_CONFIG = null;
+
+    function triggerToast(message) {
+      const toast = document.getElementById('saveToast');
+      if (message) {
+        toast.querySelector('.font-title-sm').innerText = message;
+      }
+      toast.classList.remove('translate-y-32', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      const now = new Date();
+      const timeStr = 'Hari ini, ' + now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0') + ' WIB';
+      document.getElementById('syncTimestamp').innerText = timeStr;
+
+      setTimeout(() => {
+        dismissToast();
+      }, 4000);
+    }
+
+    function dismissToast() {
+      const toast = document.getElementById('saveToast');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-32', 'opacity-0');
+    }
+
+    function readConfig() {
+      const colors = Array.from(document.querySelectorAll('#section-visual input[type="color"]')).map(el => el.value);
+      const heroCards = Array.from(document.querySelectorAll('#section-hero .grid > div'));
+      const packageCards = Array.from(document.querySelectorAll('#section-packages details'));
+      const slides = heroCards.map(card => {
+        const fields = card.querySelectorAll('input[type="text"], textarea');
+        return {
+          badge: fields[0] ? fields[0].value.trim() : '',
+          title: fields[1] ? fields[1].value.trim() : '',
+          description: fields[2] ? fields[2].value.trim() : '',
+          stats: fields[3] ? fields[3].value.trim() : ''
+        };
+      });
+      const packages = packageCards.map(card => {
+        const fields = card.querySelectorAll('input');
+        return {
+          name: fields[0] ? fields[0].value.trim() : '',
+          location: fields[1] ? fields[1].value.trim() : '',
+          rating: fields[2] ? fields[2].value.trim() : '',
+          price: fields[3] ? fields[3].value : ''
+        };
+      });
+      const orderSteps = Array.from(document.querySelectorAll('#section-cara-pesan .grid > div')).map(card => {
+        const fields = card.querySelectorAll('input, textarea');
+        return {
+          title: fields[0] ? fields[0].value.trim() : '',
+          description: fields[1] ? fields[1].value.trim() : ''
+        };
+      });
+      const rhythm = Array.from(document.querySelectorAll('#section-ritme .grid > div')).map(card => {
+        const fields = card.querySelectorAll('input, textarea');
+        return {
+          label: fields[0] ? fields[0].value.trim() : '',
+          title: fields[1] ? fields[1].value.trim() : '',
+          description: fields[2] ? fields[2].value.trim() : '',
+          highlights: fields[3] ? fields[3].value.trim() : ''
+        };
+      });
+      const promos = Array.from(document.querySelectorAll('#section-promo-musiman .grid > div')).map(card => {
+        const fields = card.querySelectorAll('input, textarea');
+        return {
+          badge: fields[0] ? fields[0].value.trim() : '',
+          title: fields[1] ? fields[1].value.trim() : '',
+          description: fields[2] ? fields[2].value.trim() : '',
+          schedule: fields[3] ? fields[3].value.trim() : '',
+          meeting: fields[4] ? fields[4].value.trim() : '',
+          type: fields[5] ? fields[5].value.trim() : '',
+          oldPrice: fields[6] ? fields[6].value.trim() : '',
+          price: fields[7] ? fields[7].value.trim() : ''
+        };
+      });
+      const gallery = Array.from(document.querySelectorAll('#section-galeri .grid > div')).map(card => {
+        const fields = card.querySelectorAll('input');
+        return {
+          caption: fields[0] ? fields[0].value.trim() : '',
+          image: fields[1] ? fields[1].value.trim() : ''
+        };
+      });
+      const curatorFields = Array.from(document.querySelectorAll('#section-kurator input, #section-kurator textarea'));
+      const curator = {
+        headline: curatorFields[0] ? curatorFields[0].value.trim() : '',
+        about: curatorFields[1] ? curatorFields[1].value.trim() : '',
+        quote: curatorFields[2] ? curatorFields[2].value.trim() : '',
+        pillar1Title: curatorFields[3] ? curatorFields[3].value.trim() : '',
+        pillar1Description: curatorFields[4] ? curatorFields[4].value.trim() : '',
+        pillar2Title: curatorFields[5] ? curatorFields[5].value.trim() : '',
+        pillar2Description: curatorFields[6] ? curatorFields[6].value.trim() : '',
+        partnerLabel: curatorFields[7] ? curatorFields[7].value.trim() : '',
+        partnerNote: curatorFields[8] ? curatorFields[8].value.trim() : ''
+      };
+      return {
+        heroBadge: slides[0].badge,
+        heroTitle: slides[0].title,
+        heroSubtitle: slides[0].description,
+        theme: {
+          bg: colors[0],
+          surface: colors[1],
+          primary: colors[2],
+          secondary: colors[3],
+          text: colors[4],
+          orb: colors[5]
+        },
+        slides: slides,
+        packages: packages,
+        orderSteps: orderSteps,
+        rhythm: rhythm,
+        promos: promos,
+        gallery: gallery,
+        curator: curator
+      };
+    }
+
+    function applyConfig(config) {
+      if (!config) return;
+      const colors = Array.from(document.querySelectorAll('#section-visual input[type="color"]'));
+      const theme = config.theme || {};
+      ['bg', 'surface', 'primary', 'secondary', 'text', 'orb'].forEach((key, i) => {
+        if (!theme[key] || !colors[i]) return;
+        colors[i].value = theme[key];
+        const textInput = colors[i].parentElement.querySelector('input[type="text"]');
+        if (textInput) textInput.value = theme[key];
+      });
+      const heroCards = Array.from(document.querySelectorAll('#section-hero .grid > div'));
+      (config.slides || []).forEach((slide, i) => {
+        const card = heroCards[i];
+        if (!card) return;
+        const fields = card.querySelectorAll('input[type="text"], textarea');
+        if (fields[0]) fields[0].value = slide.badge || '';
+        if (fields[1]) fields[1].value = slide.title || '';
+        if (fields[2]) fields[2].value = slide.description || '';
+        if (fields[3]) fields[3].value = slide.stats || '';
+      });
+      const packageCards = Array.from(document.querySelectorAll('#section-packages details'));
+      (config.packages || []).forEach((pkg, i) => {
+        const card = packageCards[i];
+        if (!card) return;
+        const fields = card.querySelectorAll('input');
+        if (fields[0]) fields[0].value = pkg.name || '';
+        if (fields[1]) fields[1].value = pkg.location || '';
+        if (fields[2]) fields[2].value = pkg.rating || '';
+        if (fields[3]) fields[3].value = pkg.price || '';
+      });
+      const applyGroup = (selector, items, keys) => {
+        const cards = Array.from(document.querySelectorAll(selector));
+        (items || []).forEach((item, i) => {
+          const card = cards[i];
+          if (!card) return;
+          const fields = card.querySelectorAll('input, textarea');
+          keys.forEach((key, j) => {
+            if (fields[j] && item[key] !== undefined) fields[j].value = item[key];
+          });
+        });
+      };
+      applyGroup('#section-cara-pesan .grid > div', config.orderSteps, ['title', 'description']);
+      applyGroup('#section-ritme .grid > div', config.rhythm, ['label', 'title', 'description', 'highlights']);
+      applyGroup('#section-promo-musiman .grid > div', config.promos, ['badge', 'title', 'description', 'schedule', 'meeting', 'type', 'oldPrice', 'price']);
+      applyGroup('#section-galeri .grid > div', config.gallery, ['caption', 'image']);
+      const curatorFields = Array.from(document.querySelectorAll('#section-kurator input, #section-kurator textarea'));
+      const curator = config.curator || {};
+      ['headline', 'about', 'quote', 'pillar1Title', 'pillar1Description', 'pillar2Title', 'pillar2Description', 'partnerLabel', 'partnerNote'].forEach((key, i) => {
+        if (curator[key] !== undefined && curatorFields[i]) curatorFields[i].value = curator[key];
+      });
+    }
+
+    function ensureTextCache() {
+      if (previewWindow.__cmsTextCache) return;
+      previewWindow.__cmsTextCache = {};
+      ['cara-pesan', 'promo', 'galeri-testimoni', 'tentang-kami'].forEach(id => {
+        const section = previewWindow.document.getElementById(id);
+        if (!section) return;
+        previewWindow.__cmsTextCache[id] = Array.from(section.querySelectorAll('h2,h3,h4,p,span,strong,li'))
+          .map(el => ({ el: el, text: el.textContent.trim() }));
+      });
+    }
+
+    function replacePreviewText(sectionId, original, updated) {
+      if (!original || !updated || original === updated) return;
+      const entries = (previewWindow.__cmsTextCache || {})[sectionId] || [];
+      const entry = entries.find(item => item.text === original);
+      if (entry) entry.el.textContent = updated;
+    }
+
+    function syncPreview() {
+      if (!previewWindow || previewWindow.closed) return;
+      const doc = previewWindow.document;
+      if (!doc || !doc.getElementById('hero')) return;
+      const config = readConfig();
+      const theme = config.theme;
+      let style = doc.getElementById('cms-live-theme');
+      if (!style) {
+        style = doc.createElement('style');
+        style.id = 'cms-live-theme';
+        doc.head.appendChild(style);
+      }
+      style.textContent = [
+        'body { background-color: ' + theme.bg + ' !important; }',
+        '.bg-surface { background-color: ' + theme.bg + ' !important; }',
+        '.bg-surface-container-low { background-color: ' + theme.surface + ' !important; }',
+        '.bg-primary { background-color: ' + theme.primary + ' !important; }',
+        '.text-primary { color: ' + theme.primary + ' !important; }',
+        '.bg-secondary { background-color: ' + theme.secondary + ' !important; }',
+        '.text-secondary { color: ' + theme.secondary + ' !important; }',
+        '.bg-tertiary { background-color: ' + theme.orb + ' !important; }',
+        '.text-tertiary { color: ' + theme.orb + ' !important; }',
+        '.text-text-primary { color: ' + theme.text + ' !important; }'
+      ].join('\n');
+
+      const badge = doc.getElementById('hero-badge');
+      const title = doc.getElementById('hero-title');
+      const subtitle = doc.getElementById('hero-subtitle');
+      const stats = doc.getElementById('hero-quick-stats');
+      if (badge) badge.textContent = config.slides[0].badge;
+      if (title && config.slides[0].title !== DEFAULT_TITLES[0]) title.textContent = config.slides[0].title;
+      if (subtitle) subtitle.textContent = config.slides[0].description;
+      if (stats) stats.textContent = config.slides[0].stats;
+
+      try {
+        let expression = '';
+        for (let i = 1; i < 3; i++) {
+          const slide = config.slides[i];
+          expression += 'heroSlides[' + i + '].badge=' + JSON.stringify(slide.badge) + ';';
+          if (slide.title !== DEFAULT_TITLES[i]) expression += 'heroSlides[' + i + '].title=' + JSON.stringify(slide.title) + ';';
+          expression += 'heroSlides[' + i + '].description=' + JSON.stringify(slide.description) + ';';
+          expression += 'heroSlides[' + i + '].stats=' + JSON.stringify(slide.stats) + ';';
+        }
+        previewWindow.eval(expression);
+      } catch (e) {}
+
+      ensureTextCache();
+      const defaults = DEFAULT_CONFIG || config;
+      (config.orderSteps || []).forEach((step, i) => {
+        const def = (defaults.orderSteps || [])[i] || step;
+        replacePreviewText('cara-pesan', def.title, step.title);
+        replacePreviewText('cara-pesan', def.description, step.description);
+      });
+      (config.rhythm || []).forEach((item, i) => {
+        const def = (defaults.rhythm || [])[i] || item;
+        replacePreviewText('cara-pesan', def.label, item.label);
+        replacePreviewText('cara-pesan', def.title, item.title);
+        replacePreviewText('cara-pesan', def.description, item.description);
+        const oldLines = (def.highlights || '').split('\n');
+        (item.highlights || '').split('\n').forEach((line, j) => replacePreviewText('cara-pesan', oldLines[j], line));
+      });
+      (config.promos || []).forEach((promo, i) => {
+        const def = (defaults.promos || [])[i] || promo;
+        ['badge', 'title', 'description', 'schedule', 'meeting', 'type', 'oldPrice', 'price'].forEach(key => {
+          replacePreviewText('promo', def[key], promo[key]);
+        });
+      });
+      (config.gallery || []).forEach((item, i) => {
+        const def = (defaults.gallery || [])[i] || item;
+        replacePreviewText('galeri-testimoni', def.caption, item.caption);
+      });
+      const galleryImages = doc.querySelectorAll('#galeri-testimoni .grid img');
+      (config.gallery || []).forEach((item, i) => {
+        if (galleryImages[i] && item.image) galleryImages[i].src = item.image;
+      });
+      const curator = config.curator || {};
+      const curatorDefaults = defaults.curator || {};
+      ['headline', 'about', 'quote', 'pillar1Title', 'pillar1Description', 'pillar2Title', 'pillar2Description', 'partnerLabel', 'partnerNote'].forEach(key => {
+        replacePreviewText('tentang-kami', curatorDefaults[key], curator[key]);
+      });
+    }
+
+    function saveConfig() {
+      localStorage.setItem(CONFIG_KEY, JSON.stringify(readConfig()));
+      syncPreview();
+      triggerToast('Perubahan tersimpan dan tersinkronisasi ke index.html.');
+    }
+
+    function resetConfig() {
+      localStorage.removeItem(CONFIG_KEY);
+      triggerToast('Data berhasil di-reset ke nilai default katalog.');
+      setTimeout(() => location.reload(), 700);
+    }
+
+    function openPreview(url) {
+      try {
+        previewWindow = window.open(url || 'index.html', 'nocturne-preview');
+        if (!previewWindow) {
+          triggerToast('Pratinjau diblokir browser. Izinkan popup untuk sinkronisasi langsung.');
+          return false;
+        }
+        previewWindow.addEventListener('load', syncPreview);
+        setTimeout(syncPreview, 900);
+        triggerToast('Pratinjau index.html dibuka dan tersinkronisasi.');
+      } catch (e) {
+        triggerToast('Gagal membuka pratinjau: ' + e.message);
+      }
+      return false;
+    }
+
+    function exportDataJSON() {
+      const blob = new Blob([JSON.stringify(readConfig(), null, 2)], { type: 'application/json' });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'travel-3d2n-config.json';
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+      triggerToast('Backup JSON travel-3d2n-config.json berhasil diunduh.');
+    }
+
+    function importDataJSON(file) {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const config = JSON.parse(reader.result);
+          applyConfig(config);
+          localStorage.setItem(CONFIG_KEY, JSON.stringify(config));
+          syncPreview();
+          triggerToast('Skema JSON valid dimuat dan disimpan.');
+        } catch (e) {
+          triggerToast('Gagal memuat JSON: format tidak valid.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    window.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+        e.preventDefault();
+        saveConfig();
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      DEFAULT_CONFIG = readConfig();
+      try {
+        const saved = localStorage.getItem(CONFIG_KEY);
+        if (saved) applyConfig(JSON.parse(saved));
+      } catch (e) {}
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-md z-40"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-sm text-text-muted font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-whatsapp-green animate-pulse"></span><span class="font-label-meta text-label-meta uppercase tracking-wider text-text-secondary">Status Sinkronisasi: localStorage Aktif</span></div><span class="hidden sm:inline text-outline-variant">|</span><span class="font-label-meta text-label-meta text-text-muted">v2.4.0-nocturne</span></div><div class="flex items-center gap-space-md"><span class="font-body-sm text-body-sm">Shortcut: <kbd class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-meta text-label-meta">Ctrl + S</kbd> Simpan</span><span class="hidden md:inline font-body-sm text-body-sm text-text-muted">© 2025 Nocturne Voyage Travel CMS. All rights reserved.</span></div></div></footer></body></html>
